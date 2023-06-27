@@ -15,6 +15,9 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+    
+        ViewData["Contador1"] = 10;
+        ViewBag.Contador2 = 20;
         return View();
     }
 
